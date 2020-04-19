@@ -24,22 +24,7 @@ mongoose.connection.on('error',(err)=>{
 
 
 
-// const customMiddleware = (req,res,next)=>{
-//     console.log("middleware executed!!")
-//     next()
-// }
 
-
-
-// app.get('/',(req,res)=>{
-//     console.log("home")
-//     res.send("Test")
-// })
-
-// app.get('/about',customMiddleware,(req,res)=>{
-//     console.log("about")
-//     res.send("about page")
-// })
 
 app.listen(PORT,()=>{
     console.log("server is running on",PORT)
