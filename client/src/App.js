@@ -1,5 +1,5 @@
 import React,{useEffect,createContext,useReducer,useContext} from 'react';
-import NavBar from './components/Navbar'
+import NavBar from './components/NavBar'
 import "./App.css"
 import {BrowserRouter,Route,Switch,useHistory} from 'react-router-dom'
 import Home from './components/screens/Home'
@@ -40,6 +40,7 @@ const Routing = ()=>{
       <Route path="/create">
         <CreatePost />
       </Route>
+
     </Switch>
   )
 }
@@ -49,14 +50,11 @@ function App() {
   return (
     <UserContext.Provider value={{state,dispatch}}>
     <BrowserRouter>
-
       <NavBar />
-
-       <Routing/>
-
+      <Routing/>
     </BrowserRouter>
     </UserContext.Provider>
-      
+
   );
 }
 
