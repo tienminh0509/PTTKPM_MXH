@@ -5,7 +5,7 @@ const NavBar = ()=>{
      const {state,dispatch} = useContext(UserContext)
      const history = useHistory()
      const renderList = ()=>{
-
+       
        if(state){
            return [
             <li ><Link to="/profile">Profile</Link></li>,
