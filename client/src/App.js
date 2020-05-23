@@ -39,6 +39,7 @@ const Routing = ()=>{
       <Route path="/create">
         <CreatePost />
       </Route>
+      
 
     </Switch>
   )
