@@ -18,7 +18,7 @@ router.get('/user/:id', (req,res)=>{
             if(err){
                 res.status(422).json({error:err})
             }
-            .res.json({user,posts})
+            res.json({user,posts})
         })
     }).catch(err=>{
         return res.status(404).json({error:"User not found"})
